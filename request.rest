@@ -1,0 +1,64 @@
+//ROL
+###
+POST http://localhost:5000/rol
+Content-Type: application/json
+
+{
+    "NOMBRE_ROL": "admin"
+}
+
+###
+POST http://localhost:5000/rol
+Content-Type: application/json
+
+{
+    "NOMBRE_ROL": "usuario"
+}
+###
+
+//USUARIO
+POST http://localhost:5000/usuario
+Content-Type: application/json
+
+{
+    "DNI_USUARIO": "12345678",
+    "NOMBRE_USUARIO": "Admin",
+    "APELLIDO_USUARIO": "User",
+    "USERNAME": "adminuser",
+    "EMAIL": "admin@gmail.com",
+    "USER_PASSWORD": "123456",
+    "CONF_USER_PASSWORD": "123456",
+    "ID_ROL": 1
+}
+
+
+###
+POST http://localhost:5000/login
+Content-Type: application/json
+
+{
+    "email": "admin@gmail.com",
+    "password": "123456"
+}
+
+###
+GET http://localhost:5000/me
+###
+
+//CUENTA BANCARIA
+###
+GET http://localhost:5000/nameBanco
+###
+POST http://localhost:5000/nameBanco
+Content-Type: application/json
+
+{
+    "NOMBRE_ENTIDAD_BANCO": "INTERBANK"
+}
+
+
+###
+GET http://localhost:5000/banco
+
+
+###
