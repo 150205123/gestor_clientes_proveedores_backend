@@ -65,6 +65,6 @@ app.use(NameBancoRouter);
 store.sync(); //creando tabla sessions para almacenar las sesiones en la db y no perderlas al reiniciar servidor
 
 app.listen(process.env.APP_PORT, () => {
-    console.log("server corriendo")
+    console.log("server corriendo en el puerto " + process.env.APP_PORT);
 });
 
